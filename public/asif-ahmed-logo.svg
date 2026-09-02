@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" role="img" aria-labelledby="title desc">
+  <title id="title">Asif Ahmed logo</title>
+  <desc id="desc">Geometric A monogram followed by the Asif Ahmed wordmark</desc>
+  <rect width="86" height="86" y="5" rx="18" fill="#102033"/>
+  <path fill="#e8eef7" d="M14 73 35 20h16l21 53H59l-4-11H31l-4 11H14Zm21-22h16l-8-21-8 21Z"/>
+  <path stroke="#3ec8ff" stroke-width="6" d="M20 61h46"/>
+  <text x="112" y="62" fill="#e8eef7" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" letter-spacing="-2">Asif Ahmed</text>
+  <circle cx="388" cy="59" r="5" fill="#3ec8ff"/>
+</svg>

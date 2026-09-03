@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "asifahmed",
-      cwd: __dirname,
+      cwd: "/srv/work/plain/asifahmed.tech",
       script: "npm",
       args: "start",
       instances: 1,

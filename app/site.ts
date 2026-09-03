@@ -1,13 +1,10 @@
 /**
  * Canonical site configuration.
  *
- * Production origin: set `NEXT_PUBLIC_SITE_URL` (no trailing slash) when the
- * live domain is known. The fallback matches the current Sites preview host so
- * canonical tags, Open Graph URLs, sitemap, and robots stay consistent.
+ * Production origin: set `NEXT_PUBLIC_SITE_URL` (no trailing slash) to override.
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://asif-ahmed-portfolio.codexhive.chatgpt.site"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://asifahmed.tech"
 ).replace(/\/$/, "");
 
 export const site = {

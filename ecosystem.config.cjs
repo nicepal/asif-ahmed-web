@@ -12,7 +12,7 @@ module.exports = {
       min_uptime: "10s",
       env: {
         NODE_ENV: "production",
-        PORT: "8500",
+        PORT: "8501",
         NEXT_PUBLIC_SITE_URL: "https://asifahmed.tech",
         VINEXT_TRUST_PROXY: "1",
         VINEXT_TRUSTED_HOSTS: "asifahmed.tech,www.asifahmed.tech",

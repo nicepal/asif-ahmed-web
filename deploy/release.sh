@@ -50,6 +50,6 @@ pm2 status "${APP_NAME}"
 echo
 echo "Listening:"
 echo "  public  http://$(hostname -I 2>/dev/null | awk '{print $1}'):8500"
-echo "  node    127.0.0.1:8510"
+echo "  node    127.0.0.1:8520"
 echo
 echo "Check: curl -sI -H 'Host: asifahmed.tech' http://127.0.0.1:8500/"

@@ -59,6 +59,6 @@ fi
 echo
 echo "Bootstrap done."
 echo "  nginx  -> :${PUBLIC_PORT}"
-echo "  app    -> 127.0.0.1:8510 (PM2, after release)"
+echo "  app    -> 127.0.0.1:8520 (PM2, after release)"
 echo "Point Caddy at 127.0.0.1:${PUBLIC_PORT} using deploy/Caddyfile.asifahmed.tech"
 echo "Next: cd ${APP_DIR} && bash deploy/release.sh"

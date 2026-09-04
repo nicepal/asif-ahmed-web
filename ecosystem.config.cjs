@@ -4,7 +4,7 @@ module.exports = {
       name: "asifahmed",
       cwd: "/srv/work/plain/asifahmed.tech",
       script: "node_modules/.bin/vinext",
-      args: "start --hostname 127.0.0.1 --port 8510",
+      args: "start --hostname 127.0.0.1 --port 8520",
       instances: 1,
       exec_mode: "fork",
       autorestart: true,
@@ -19,7 +19,7 @@ module.exports = {
       out_file: "/srv/work/plain/asifahmed.tech/logs/pm2-out.log",
       env: {
         NODE_ENV: "production",
-        PORT: "8510",
+        PORT: "8520",
         HOSTNAME: "127.0.0.1",
         NEXT_PUBLIC_SITE_URL: "https://asifahmed.tech",
         VINEXT_TRUST_PROXY: "1",

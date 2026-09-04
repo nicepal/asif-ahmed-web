@@ -3,7 +3,7 @@
 set -euo pipefail
 
 APP_DIR="/srv/work/plain/asifahmed.tech"
-APP_PORT="8510"
+APP_PORT="8520"
 NGINX_PORT="8500"
 
 cd "${APP_DIR}"
@@ -43,7 +43,7 @@ head -c 120 /tmp/diag-nginx.body 2>/dev/null; echo
 echo
 echo "==> nginx site config (needs upstream 127.0.0.1:${APP_PORT})"
 if [[ -f /etc/nginx/sites-available/asifahmed.tech ]]; then
-  grep -nE 'listen|server_name|proxy_pass|upstream|8510|8500' /etc/nginx/sites-available/asifahmed.tech || true
+  grep -nE 'listen|server_name|proxy_pass|upstream|8520|8500' /etc/nginx/sites-available/asifahmed.tech || true
 else
   echo "MISSING  /etc/nginx/sites-available/asifahmed.tech"
 fi

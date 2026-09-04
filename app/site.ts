@@ -21,7 +21,7 @@ export const site = {
   github: "https://github.com/nicepal/",
   linkedin: "https://www.linkedin.com/in/codexhive/",
   facebook: "https://web.facebook.com/soft.dev.asif",
-  profileImage: "/asif-profile.png",
+  profileImage: "/asif-profile.jpg",
   logo: "/asif-ahmed-logo.svg",
   ogImage: "/og.png",
   favicon: "/favicon.svg",

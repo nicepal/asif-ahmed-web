@@ -97,8 +97,8 @@ export default function Home() {
               <img
                 src={site.profileImage}
                 alt="Portrait of Asif Ahmed, Full-Stack Software Engineer"
-                width={200}
-                height={181}
+                width={819}
+                height={1024}
                 fetchPriority="high"
                 decoding="async"
               />

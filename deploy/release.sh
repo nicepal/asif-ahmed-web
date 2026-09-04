@@ -19,15 +19,21 @@ if ! command -v pm2 >/dev/null 2>&1; then
   exit 1
 fi
 
-export NODE_ENV=production
 export NEXT_PUBLIC_SITE_URL="${NEXT_PUBLIC_SITE_URL:-https://asifahmed.tech}"
 
 mkdir -p logs .wrangler
 
-echo "==> npm ci (keep devDependencies — vinext/wrangler are required to start)"
-npm ci
+# vinext/wrangler live in dest. npm omits them when NODE_ENV=production.
+echo "==> npm ci --include=dev"
+NPM_CONFIG_PRODUCTION=false npm ci --include=dev
+
+if [[ ! -x node_modules/.bin/vinext ]]; then
+  echo "vinext is missing after install. Aborting." >&2
+  exit 1
+fi
 
 echo "==> npm run build"
+export NODE_ENV=production
 npm run build
 
 if [[ ! -f dist/server/index.js && ! -d dist ]]; then

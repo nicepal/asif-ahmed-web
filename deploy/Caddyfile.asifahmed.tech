@@ -1,0 +1,14 @@
+# Front TLS terminator. Caddy on :443 must send this host to local nginx :8500.
+# Install: copy into /etc/caddy/Caddyfile (or a file imported from it), then:
+#   sudo caddy validate --config /etc/caddy/Caddyfile
+#   sudo systemctl reload caddy
+
+asifahmed.tech, www.asifahmed.tech {
+	encode gzip
+	reverse_proxy 127.0.0.1:8500 {
+		header_up Host {host}
+		header_up X-Real-IP {remote_host}
+		header_up X-Forwarded-For {remote_host}
+		header_up X-Forwarded-Proto {scheme}
+	}
+}
